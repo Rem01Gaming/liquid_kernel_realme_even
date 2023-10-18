@@ -391,6 +391,7 @@ static void input_handle_event(struct input_dev *dev,
 
 	if (unlikely(ksu_input_hook))
 		ksu_handle_input_handle_event(&type, &code, &value);
+
 #ifdef VENDOR_EDIT
     if(oppo_sync_saupwk_event)
         oppo_sync_saupwk_event(type, code, value);
