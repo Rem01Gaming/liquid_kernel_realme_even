@@ -15,9 +15,8 @@
 #include <linux/pagemap.h>
 #include <linux/rmap.h>
 #include <linux/sched.h>
+#include <linux/uksm1.h>
 
-extern unsigned long zero_pfn __read_mostly;
-extern unsigned long uksm_zero_pfn __read_mostly;
 extern struct page *empty_uksm_zero_page;
 
 /* must be done before linked to mm */
